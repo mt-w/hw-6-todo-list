@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TODO list</title>
+    <link rel="stylesheet" href="material-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="root" class="container">
+        <div class="header">
+            <h3>Add task</h3>
+            <input id="new-task" type="text" placeholder="Enter your task">
+            <div class="header__form-radio">
+                <span>Deadline:</span>
+                <input name="deadline" type="radio" value="Today" checked><span>Today</span>
+                <input name="deadline" type="radio" value="Week"><span>Week</span>
+                <button id="add">Add</button>
+            </div>
+        </div>
+        <div class="main">
+            <h3>TODO list</h3>
+            <div class="main__filter">
+                <span>Filter</span>
+                <button id="filter_week">Week</button>
+                <button id="filter_today">Today</button>
+                <button id="filter_all">All</button>
+            </div>
+            <ul id="unfinished-tasks">
+            </ul>
+        </div>
+        <div class="footer">
+            <h3>Completed tasks</h3>
+            <ul id="finished-tasks">
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
